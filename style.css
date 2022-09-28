@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+/* Root */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'PT Serif', serif;
+    line-height: 1.5;
+    color: #fff;
+    background-color: rgb(12, 12, 12);
+}
+
+/* Utility */
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+ul{
+    list-style: none;
+}
+
+.btn{
+    border: none;
+    background: rgb(73, 196, 73);
+    padding: .7rem 1.4rem;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 6px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+img1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+#dp{
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+
+
+.bottom-line{
+    background: rgb(73, 196, 73);
+    height: 6px;
+    width: 13vw;
+}
+
+.active{
+    border-bottom: 2px solid #fff;
+}
+
+i.fas, i.fab{
+    background:rgb(12, 12, 12);
+    color: rgb(73, 196, 73);
+}
+
+.text-dash{
+    border-right: 4px solid rgb(12, 12, 12);
+    padding-left: .6rem;
+}
+
+/* Header */
+/* Showcase */
+#header .showcase{
+    position: relative;
+    height: 100vh;
+    background: url('https://images.idgesg.net/images/article/2017/05/coding_development_data_macbook_pro_laptop_thinkstock_627045246-100724496-large.jpg') no-repeat center center/cover, rgba(0, 0, 0, 0.6);
+    background: url('img/Weblogo.jpg') no-repeat center center/cover, rgba(0, 0, 0, 0.6);
+    background-attachment: fixed;
+    width: 100vw;
+    color: rgb(12, 12, 12);
+}
+
+.showcase .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2.5rem;
+    padding-left: 4rem;
+    background: rgba(68, 68, 68, 0.6);
+    width: 100%;
+    height: 100%;
+}
+
+.showcase .content .text-color{
+    color: rgb(26 130 238);
+}
+
+.showcase .content h1{
+    line-height: 1.2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    color:#fff;
+}
+
+.content .text-span{
+    font-family: cursive;
+     color:#fff;s
+}
+
+.showcase .content i.fab{
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding-right: .3rem;
+}
+
+/* About */
+#about{
+    padding: 3rem;
+    background: rgb(12, 12, 12);
+}
+
+.box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr );
+    background: rgb(12, 12, 12);
+    padding: 4rem;
+}
+
+#about .box .profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+#about .profile .bio{
+    margin-right: 70px;
+}
+
+#about .profile .bio .bio-data{
+    display: flex;
+    align-items: center;
+    padding: .3rem 0;
+}
+
+#about .box .profile .image{
+    width: 0%;
+    height: 100px;
+    background:rgb(12, 12, 12);
+    border-radius: 80%;
+}
+
+/* #about .box .profile .image img{
+     border-radius: 70%;
+    border-top-left-radius: 0;
+    position: relative;
+    margin: right 130px;
+} */
+#about .box .profile .image img1{
+    border-radius: 70%;
+   border-top-left-radius: 0;
+   position: relative;
+   margin: right 130px;
+}
+
+#about .box .skills{
+    padding-top: 2rem;
+}
+
+#about .box .skills .skill{
+    padding: .4rem 0;
+}
+
+.skills .skill .line{
+    padding: .2rem;
+    background: #111;
+    width: 90%;
+    background: #fff;
+    padding: 0.05rem;
+}
+
+.skills .skill .line .line-percent{
+    background: rgb(73, 196, 73);
+    padding: .2rem;
+    width: 90%;
+}
+
+.skills .skill .line .line-percent.line-css{
+    width: 70%;
+}
+
+.skills .skill .line .line-percent.line-js{
+    width: 50%;
+}
+
+.skills .skill .line .line-percent.line-nodejs{
+    width: 75%;
+}
+
+
+.skills .skill .line .line-percent.line-React{
+    width: 60%;
+}
+
+.skills .skill .line .line-percent.line-mongo{
+    width: 85%;
+}
+
+#about .about-me .bottom-line{
+    width: 7.7vw;
+}
+
+#about .about-me .para{
+    padding: 2rem 0;
+    font-size: 1.1rem;
+}
+
+#about .about-me .para p{
+    padding-bottom: 1rem;
+}
+
+/* Work */
+#work{
+    padding: 3rem;
+    background-color: rgb(12, 12, 12);
+}
+
+.work-box .box-info{
+    margin-top: 1rem;
+    margin-left: 8.5rem;
+}
+
+.work-box .box-info a{
+    padding: .8rem;
+     background: black; 
+    color: rgb(73, 196, 73);
+    border-radius: 100px;
+}
+
+.work-box .box-info a i.fas{
+    color:  rgb(73, 196, 73);
+    background-color: rgb(12, 12, 12);
+    padding-right: .3rem;
+}
+
+/* Services */
+#services{
+    padding: 3rem;
+    background: rgb(37, 35, 35);
+}
+
+.heading{
+    text-align: center;
+}
+
+.heading h1{
+    font-size: 3rem;
+    color:  rgb(73, 196, 73);
+    background-color: rgb(37, 35, 35);
+}
+
+.heading p{
+    font-size: 1.1rem;
+    padding-bottom: .4rem;
+}
+
+.heading .bottomLine{
+    height: 6px;
+    width: 70px;
+    margin: auto;
+    background: rgb(73, 196, 73);
+    margin-bottom: 2rem;
+}
+
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+#services .boxes .service-box{
+    background: rgb(12, 12, 12);
+    text-align: center;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px #333;
+    background: rgb(12, 12, 12);
+    text-align: center;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px #333;
+    box-shadow: 0.2px 0.3px #777;
+    
+}
+#services .boxes .service-box:hover{
+    background-color: rgba(98, 106, 94, 0.893);
+}
+
+.service-box .head{
+    padding: 1.5rem;
+    padding-top: 0;
+}
+
+.service-box .head i.fas{
+    padding-bottom: 1rem;
+}
+
+/* Contact */
+#contact{
+    padding: 3rem;
+    background: rgb(12, 12, 12);
+}
+
+#contact .contact-form .bottom-line{
+    width: 10.2vw;
+    margin-bottom: 1rem;
+}
+
+.contact-form .form-div{
+    padding: .6rem;
+}
+
+.contact-form .form-div input,
+.contact-form .form-div textarea{
+    padding: .7rem 1rem;
+    font-family: 'Baloo 2', cursive;
+    font-size: .9rem;
+    width: 90%;
+}
+
+.contact-form .form-div textarea{
+    height: 170px;
+}
+
+.contact-form .btn:hover{
+    opacity: .9;
+}
+
+.contact-info .bottom-line{
+    width: 10.7vw;
+    margin-bottom: 1rem;
+}
+
+.contact-info > p{
+    padding: 1.5rem 0;
+}
+
+.contact-info p{
+    font-size: 1.2rem;
+}
+
+.contact-info .info{
+    display: flex;
+    align-items: center;
+}
+
+.contact-info .info i{
+    padding-right: 1rem;
+    padding-bottom: .5rem;
+}
+
+/* Footer */
+#footer{
+    padding: 2rem;
+    text-align: center;
+    background-color:rgb(37, 35, 35);
+}
+
+/* Media Queries */
+
+
+
+@media (max-width: 1050px) {
+    .boxes{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .box{
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        
+    }
+
+}
+
+@media (max-width: 700px) {
+    #about .profile .bio{
+        margin-right: 0;
+    }
+
+    .boxes{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 580px) {
+    .showcase .content{
+        padding-left: 2rem;
+    }
+
+    #services .boxes .service-box{
+        padding: 1.5rem;
+    }
+
+    #about{
+        padding: 1rem;
+    }
+
+    
+
+    .box{
+        padding: 2rem;
+        
+    }
+
+    #work{
+        padding: 1rem;
+    }
+
+    #contact{
+        padding: 1rem;
+    }
+}
